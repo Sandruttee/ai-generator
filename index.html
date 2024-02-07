@@ -7,32 +7,35 @@
     <title>AI recipe generator</title>
   </head>
   <body>
-    <header><h1>Welcome to AI Recipe Generator</h1></header>
-    <main>
-      <form>
-        <input
-          type="texxt"
-          placeholder="Enter the name of the food you wish the recipe for!"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>The recipe will go here</div>
-    </main>
-    <footer>
-      This AI project was coded by Sandra Plačenytė and is open-sourced on
-      <a href="https://github.com/Sandruttee/ai-generator" target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a
-        href="https://ai-recipe-generator-sandruttee.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header><h1>Welcome to AI Recipe Generator</h1></header>
+      <main>
+        <form>
+          <input
+            type="texxt"
+            placeholder="Enter the name of the food you wish the recipe for!"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">The recipe will go here</div>
+      </main>
+      <footer>
+        This AI project was coded by Sandra Plačenytė and is open-sourced on
+        <a href="https://github.com/Sandruttee/ai-generator" target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a
+          href="https://ai-recipe-generator-sandruttee.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
