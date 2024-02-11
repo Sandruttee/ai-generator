@@ -12,19 +12,25 @@
     <div class="container">
       <header><h1>Welcome to AI Recipe Generator</h1></header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="texxt"
-            placeholder="Enter the name of the food you wish the recipe for!"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="texxt"
+              placeholder="Enter the name of the food you wish the recipe for!"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            example: Bolognese sauce, Onion soup, Mashed potato
+          </div>
+        </div>
+
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by Sandra Plačenytė and is open-sourced on

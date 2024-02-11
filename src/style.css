@@ -23,13 +23,23 @@ header {
   margin-bottom: 30px;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
-  border-radius: 10px;
-  display: flex;
-  box-shadow: var(--shadow);
   margin-bottom: 30px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
 }
 .instructions {
   padding: 16px;
@@ -60,6 +70,10 @@ form {
   box-shadow: var(--shadow);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
@@ -68,4 +82,14 @@ footer {
 
 a {
   color: var(--main-color);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
